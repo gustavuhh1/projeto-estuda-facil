@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "Health Check", description = "Endpoint para verificar status da API")
 public class SwaggerTestController {
 
+    // Rota para teste do Swagger-UI
     @GetMapping("/health")
     public ResponseEntity<String> healthCheck() {
         return ResponseEntity.ok("API Estuda Fácil está funcionando!");
